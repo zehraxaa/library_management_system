@@ -42,10 +42,11 @@ class Library:
 lib = Library()
 
 while True:
-    print("\n*** MENU **")
+    print("\n*** MENU ***")
     print("1) List Books")
     print("2) Add Book")
     print("3) Remove Book")
+    print("4) Exit")
     choice = input("Enter your choice (1-3): ")
     if choice == "1":
         lib.list_books()
@@ -53,5 +54,8 @@ while True:
         lib.add_book()
     elif choice == "3":
         lib.remove_book()
+    elif choice =="4":
+        print("Exiting the program. Goodbye")
+        break
     else:
         print("Invalid choice. Please try again.")
